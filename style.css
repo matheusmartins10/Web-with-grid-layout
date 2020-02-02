@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body, h1, h2, h3, p, li{
+    padding: 0;
+    margin: 0;   
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 100px 3fr 80px;
+    grid-template-areas: "h h"
+    "m a"
+    "f f";
+}
+header{
+    background:#252525;
+    color: #fff;
+    grid-area: h;
+}
+
+.menu{
+    max-width: 960px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav li a{
+    padding: 10px;
+    color: #fff;
+    font-size: 1.115em;
+    align-self: center;
+    
+}
+main{
+    background:white;
+    grid-area: m;
+}
+
+.sobre{
+    max-width: 800px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sobre-info{
+    width: 450px;
+}
+
+.sobre-info h2{
+    font-size: 3em;
+    padding: 10px 0;
+}
+.sobre-info p{
+    line-height: 1em;
+    padding: 10px 0;
+}
+aside{
+    background: pink;
+    grid-area: a;
+}
+
+footer{
+    background: wheat;
+    grid-area: f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
